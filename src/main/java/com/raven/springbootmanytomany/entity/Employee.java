@@ -34,7 +34,7 @@ public class Employee {
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH,
             CascadeType.REFRESH })
-    @JoinTable(name = "employee_project", joinColumns = @JoinColumn(name = "employee_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
+    @JoinTable(name = "EMPLOYEE_PROJECT_MAPPING", joinColumns = @JoinColumn(name = "employee_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
     private Set<Project> projects;
 
     public Employee() {
@@ -91,5 +91,4 @@ public class Employee {
         return "Employee [email=" + email + ", id=" + id + ", name=" + name + ", technicalSkill=" + technicalSkill
                 + "]";
     }
-
 }

@@ -30,7 +30,7 @@ public class Project {
     private String technologyUsed;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.ALL })
-    @JoinTable(name = "employee_project", joinColumns = @JoinColumn(name = "project_id"), inverseJoinColumns = @JoinColumn(name = "employee_id"))
+    @JoinTable(name = "EMPLOYEE_PROJECT_MAPPING", joinColumns = @JoinColumn(name = "project_id"), inverseJoinColumns = @JoinColumn(name = "employee_id"))
     private Set<Employee> employees;
 
     public Project() {
@@ -77,5 +77,4 @@ public class Project {
     public String toString() {
         return "Project [id=" + id + ", projectName=" + projectName + ", technologyUsed=" + technologyUsed + "]";
     }
-
 }
