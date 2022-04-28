@@ -106,7 +106,7 @@ public class ProjectController {
 		System.out.println("\nProject details :: " + project.toString() + "\n");
 		System.out.println("\nEmployees details :: " + project.getEmployees() + "\n");
 
-		System.out.println("Done!!!" + "\n");
+		System.out.println("Done!!!\n");
 
 		return "Project fetched successfully!!!";
 	}

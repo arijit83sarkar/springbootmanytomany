@@ -113,7 +113,7 @@ public class EmployeeController {
         System.out.println("\nEmployee details :: " + employee.toString() + "\n");
         System.out.println("\nProject details :: " + employee.getProjects() + "\n");
 
-        System.out.println("Done!!!" + "\n");
+        System.out.println("Done!!!\n");
 
         return "Employee fetched successfully!!!";
     }
